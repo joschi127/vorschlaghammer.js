@@ -105,11 +105,17 @@
                 return _cleanGesture();
             } else {
                 if (GESTURE.isDoubleTap) {
-                    _trigger("doubleTap");
+                    _trigger("doubleTap", {
+                        x: FIRST_TOUCH[0].x,
+                        y: FIRST_TOUCH[0].y
+                    });
                     return _cleanGesture();
                 } else {
                     TOUCH_TIMEOUT = setTimeout(function () {
-                        _trigger("singleTap");
+                        _trigger("singleTap", {
+                            x: FIRST_TOUCH[0].x,
+                            y: FIRST_TOUCH[0].y
+                        });
                         _cleanGesture();
                     }, 250);
                     return TOUCH_TIMEOUT;
