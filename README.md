@@ -1,5 +1,8 @@
-# jquery-touch-gestures
-jQuery Touch Gestures based touch.js Gist by Vitaly Rotari, which is a ported version from QuoJS Touch Gestures originally implemented by Javi Jiménez Villar
+# vorschlaghammer.js
+
+Nice and lightweight alternative to hammer.js. Does not prevent native scrolling e.g. with `overflow: auto;`.
+
+Based on the touch.js Gist by Vitaly Rotari, which is a ported version of the QuoJS touch gestures code which was originally implemented by Javi Jiménez Villar.
 
 Adds support for the following gesture events to jQuery: (based on the very good implementation from QuoJS)
 
